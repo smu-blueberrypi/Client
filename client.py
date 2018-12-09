@@ -3,8 +3,6 @@ import os
 import sys
 import socket
 import threading
-from video import test
-from video import main
 from video import object_detection_yolo
 from operator import eq
 from pyautogui import press
@@ -49,7 +47,7 @@ def sendingMsg():
     '''
     if not eq(search,None) and not eq(search, tmp):
       
-      print("접근!!")
+      print("Connect")
       j1 = {'object':search,'lat':lat,'lon':lng,'alt':alt}
       data = json.dumps(j1)
       print(data)
